@@ -19,7 +19,7 @@ const Contact = () => {
           e.target.reset();
      };
      return (
-          <div style={{ marginTop: '20px' }}>
+          <div id="contact" style={{ marginTop: '20px' }}>
                <Container>
                     <Row className="d-flex justify-center align-items-center shadow p-5">
                          <Col sm={12} md={4}>

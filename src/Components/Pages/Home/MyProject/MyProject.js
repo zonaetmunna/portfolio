@@ -26,7 +26,7 @@ const MyProject = () => {
           }
      ];
      return (
-          <div style={{ marginTop: '20px' }}>
+          <div style={{ marginTop: '50px' }}>
                <Container>
                     <h3 className="text-center text-primary">My Projects</h3>
                     <Row xs={1} md={3} className="g-4">
