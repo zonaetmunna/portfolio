@@ -1,0 +1,99 @@
+[
+     {
+          "id": 1,
+          "name": "THE Hands of Time",
+          "description": [
+               {
+                    "des1": "In this project, I used client-side, server-side, and database...."
+               },
+               {
+                    "des2": "Developed a dashboard for normal and admin users for different services"
+               },
+               {
+                    "des3": "For any service, a user must login and he will be able to give reviews"
+               },
+               {
+                    "des4": "An admin can add, delete or update any service and make an admin"
+               },
+               {
+                    "des5": "for client site designed i used Material-UI, react,firebase-authenticationFor back-end site Node.js, express.js, and MongoDB. Deploy in Heroku and firebase."
+               },
+               {
+                    "link1": "https://github.com/programming-hero-web-course-4/niche-website-client-side-zonaetmunna"
+               },
+               {
+                    "link2": "https://github.com/programming-hero-web-course-4/niche-website-server-side-zonaetmunna"
+               },
+               {
+                    "link3": "https://react-firebase-private-router.web.app/"
+               }
+          ],
+          "image": "https://i.ibb.co/sVG0pR1/1.png",
+          "image1": "https://i.ibb.co/PWwb18N/2.png",
+          "image2": "https://i.ibb.co/8jntr7K/3.png",
+          "image3": "https://i.ibb.co/rG8v0H2/4.png",
+          "image4": "https://i.ibb.co/zQG1zWk/5.png"
+     },
+     {
+          "id": 2,
+          "name": "World Travel",
+          "description": [
+               {
+                    "des1": "A user selects any service and goes to the order placed for full details."
+               },
+               {
+                    "des2": "Users must login to order a service and redirect them to the previous page."
+               },
+               {
+                    "des3": "The user will be able to see all his orders and delete them if he wants."
+               },
+               {
+                    "des4": "A simple admin can see all the orders and he can add any service."
+               },
+               {
+                    "des5": "Implemented this project react,react-bootstrap,react-router , react-hook-form , firebase-authentication ,Node.js and express.js. MongoDB is used for the database."
+               },
+               {
+                    "link1": "https://github.com/zonaetmunna/tourism-react-client-side-project-assignment-11"
+               },
+               {
+                    "link2": "https://github.com/zonaetmunna/tourism-react-server-side-project-assignment-11"
+               },
+               {
+                    "link3": "https://react-router-firebase-2e6e9.web.app/home"
+               }
+          ],
+          "image": "https://i.ibb.co/Hd86N50/1.png",
+          "image1": "https://i.ibb.co/Pgnp5sw/2.png",
+          "image2": "https://i.ibb.co/sWTnmxp/3.png ",
+          "image3": "https://i.ibb.co/6HTG77S/4.png"
+     },
+     {
+          "id": 3,
+          "name": "Medical and Health center",
+          "description": [
+               {
+                    "des1": "The project has been designed using only front-end technology-based."
+               },
+               {
+                    "des2": "If the user clicks on any service then full details will be shown."
+               },
+               {
+                    "des3": "Users will have to login for a service and be redirected to an appointment."
+               },
+               {
+                    "des4": "A user will be able to see his appointment, news medicine details."
+               },
+               {
+                    "des5": "The technology is used to react ,react-bootstrap ,react-router ,firebase- authentication systems."
+               },
+               {
+                    "link1": "https://github.com/zonaetmunna/healthcare-react-authentication-assignment-10"
+               }
+          ],
+          "image": "https://i.ibb.co/f8y9SQ5/1.png",
+          "image1": "https://i.ibb.co/f0KdFMJ/2.png ",
+          "image2": "https://i.ibb.co/5620xnN/3.png",
+          "image3": "https://i.ibb.co/0cDRFDt/4.png "
+     }
+]
