@@ -16,7 +16,7 @@ const Header = () => {
                               <Nav.Link as={Link} to="/">Home</Nav.Link>
                               <Nav.Link as={Link} to="/">Contact</Nav.Link>
                               <Nav.Link as={Link} to="/">About</Nav.Link>
-                              <Button className="resume__Button2" to={pdf} download={pdf} component={Link}>My Resume</Button>
+                              <Button className="bg-dark"><Link to={pdf} target="_blank" download>Resume</Link></Button>
                          </Nav>
                     </Navbar.Collapse>
                </Container>
