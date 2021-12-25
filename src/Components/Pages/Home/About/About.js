@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 
 const About = () => {
      return (
-          <div style={{ background: '#69F8EB' }}>
+          <div id="about" style={{ background: '#69F8EB' }}>
                <Container className="m-4 p-3">
                     <Row className="justify-center align-items-center">
                          <Col sm={12} md={6}>

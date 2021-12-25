@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import pdf from '../../../../zonaet-hossain-resume-for-Frontend-developer.pdf'
 
 const Header = () => {
@@ -13,10 +14,11 @@ const Header = () => {
                          <Nav className="me-auto">
                          </Nav>
                          <Nav>
-                              <Nav.Link as={Link} to="/">Home</Nav.Link>
-                              <Nav.Link as={Link} to="/">Contact</Nav.Link>
-                              <Nav.Link as={Link} to="/">About</Nav.Link>
-                              <Button className="bg-dark"><Link to={pdf} target="_blank" download>Resume</Link></Button>
+                              <Nav.Link as={HashLink} to="#home">Home</Nav.Link>
+                              <Nav.Link as={HashLink} to="#home">hello</Nav.Link>
+                              <Nav.Link as={HashLink} to="#contact">Contact</Nav.Link>
+                              <Nav.Link as={HashLink} to="#about">About</Nav.Link>
+                              <Button className="bg-dark"><Link className='text-decoration-none' to={pdf} target="_blank" download>Resume</Link></Button>
                          </Nav>
                     </Navbar.Collapse>
                </Container>
