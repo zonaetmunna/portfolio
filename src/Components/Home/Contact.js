@@ -9,7 +9,6 @@ const Contact = () => {
           e.preventDefault();
 
           // service_1317448
-
           emailjs.sendForm('service_1317448', 'template_vd01ols', form.current, 'user_wdIIPNgQClF1IL8gHS20T')
                .then((result) => {
                     console.log(result.text);
