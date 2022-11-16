@@ -7,7 +7,7 @@ import pdf from "../../../zonaet-hossain-resume-for-Frontend-developer.pdf";
 
 const Header = () => {
   const { user, state, dispatch } = useContext(AuthContext);
-  const darkMode = state.darkMode;
+  // const darkMode = state.darkMode;
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

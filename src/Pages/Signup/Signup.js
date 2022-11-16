@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { Spinner } from "react-bootstrap";
+import { Button, Form, Spinner } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/ContextProvider";
 
 const Signup = () => {
+  // navigation
   const navigate = useNavigate();
   const { error, isLoading, signup } = useContext(AuthContext);
   const { register, handleSubmit } = useForm();
@@ -21,15 +22,34 @@ const Signup = () => {
       {!isLoading && (
         <div>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <input className="" {...register("name")} />
+            <input
+              className=""
+              placeholder=""
+              {...register("name", { required: true })}
+            />
             <br />
-            <input className="" {...register("email")} />
+            <input
+              className=""
+              placeholder="password"
+              {...register("email", { required: true })}
+            />
             <br />
-            <input className="" {...register("password")} />
+            <input
+              className=""
+              placeholder=""
+              {...register("password", { required: true })}
+            />
             <br />
-            <input className="" {...register("RePassword")} />
+            <input
+              className=""
+              placeholder=""
+              {...register("RePassword", { required: true })}
+            />
             <br />
-            <input className="" type="submit" />
+            {/* <input className="" type="submit" /> */}
+            <Button variant="primary" className="m-2" type="submit">
+              Signup
+            </Button>{" "}
             <br />
           </form>
         </div>
