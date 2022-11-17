@@ -1,7 +1,6 @@
 import { createContext, useReducer } from "react";
-import useFirebase from "../Hooks/useFirebase";
 
-export const AuthContext = createContext();
+export const ThemeContext = createContext();
 
 const initialState = {
   darkMode: false,
@@ -17,14 +16,15 @@ const themeReducer = (state, action) => {
   }
 };
 
-const ContextProvider = ({ children }) => {
-  const allContext = useFirebase();
+
+const ThemeProvider = ({children}) => {
   const [state, dispatch] = useReducer(themeReducer, initialState);
   return (
-    <AuthContext.Provider value={(allContext, [state, dispatch])}>
+    <ThemeContext.Provider value={{ state, dispatch }}>
       {children}
-    </AuthContext.Provider>
-  );
+    </ThemeContext.Provider>
+  )
+
 };
 
-export default ContextProvider;
+export default ThemeProvider;
