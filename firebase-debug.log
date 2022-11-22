@@ -1,40 +1,102 @@
-[debug] [2022-11-17T08:11:31.498Z] ----------------------------------------------------------------------
-[debug] [2022-11-17T08:11:31.500Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2022-11-17T08:11:31.501Z] CLI Version:   9.22.0
-[debug] [2022-11-17T08:11:31.501Z] Platform:      win32
-[debug] [2022-11-17T08:11:31.501Z] Node Version:  v16.14.2
-[debug] [2022-11-17T08:11:31.502Z] Time:          Thu Nov 17 2022 14:11:31 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-11-17T08:11:31.503Z] ----------------------------------------------------------------------
+[debug] [2022-11-17T22:13:20.939Z] ----------------------------------------------------------------------
+[debug] [2022-11-17T22:13:20.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-17T22:13:20.942Z] CLI Version:   9.22.0
+[debug] [2022-11-17T22:13:20.943Z] Platform:      win32
+[debug] [2022-11-17T22:13:20.943Z] Node Version:  v16.14.2
+[debug] [2022-11-17T22:13:20.944Z] Time:          Fri Nov 18 2022 04:13:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-11-17T22:13:20.945Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-11-17T08:11:31.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-17T08:11:31.587Z] > authorizing via signed-in user (zonaetmonna2233@gmail.com)
-[debug] [2022-11-17T08:11:31.587Z] [iam] checking project portfolio-cefc9 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2022-11-17T08:11:31.590Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2022-11-17T08:11:31.591Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2022-11-17T22:13:21.023Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-17T22:13:21.023Z] > authorizing via signed-in user (zonaetmonna2233@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\software-developement\course-web development-with -jankar sir-part2\scic-course\portfoloi\portfolio-scic-assignment
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using portfolio-cefc9. 
+[debug] [2022-11-17T22:14:48.086Z] > refreshing access token with scopes: []
+[debug] [2022-11-17T22:14:48.087Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2022-11-17T08:11:31.933Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 17 Nov 2022 08:11:34 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-11-17T08:11:31.937Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-cefc9:testIamPermissions  
- {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2022-11-17T08:11:33.400Z] <<< HTTP RESPONSE 401 {"www-authenticate":"Bearer realm=\"https://accounts.google.com/\", error=\"invalid_token\"","vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Thu, 17 Nov 2022 08:11:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1177","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-11-17T08:11:33.401Z] <<< HTTP RESPONSE BODY {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
-[debug] [2022-11-17T08:11:33.413Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2022-11-17T08:11:33.421Z] > refreshing access token with scopes: []
-[debug] [2022-11-17T08:11:33.422Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2022-11-17T08:11:33.649Z] <<< HTTP RESPONSE 400 {"date":"Thu, 17 Nov 2022 08:11:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-11-17T08:11:33.658Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 [none]
-[debug] [2022-11-17T08:11:34.147Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 401
-[debug] [2022-11-17T08:11:34.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2022-11-17T08:11:34.148Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2022-11-17T08:11:34.401Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-11-17T22:14:48.499Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 17 Nov 2022 22:14:50 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-17T22:14:48.507Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 [none]
+[debug] [2022-11-17T22:14:49.155Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 401
+[debug] [2022-11-17T22:14:49.156Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-11-17T22:14:49.156Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-11-17T22:14:49.420Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at module.exports (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
     at Client.doRequest (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
     at processTicksAndRejections (node:internal/process/task_queues:96:5)
     at async Client.request (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
     at async Object.getFirebaseProject (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
-    at async Object.getDefaultHostingSite (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
-    at async requireHostingSite (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
-    at async Object.fn (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:73:9)
-    at async C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:188:17
+    at async Object.doSetup [as project] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project portfolio-cefc9. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-11-17T22:14:58.873Z] ----------------------------------------------------------------------
+[debug] [2022-11-17T22:14:58.876Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-17T22:14:58.877Z] CLI Version:   9.22.0
+[debug] [2022-11-17T22:14:58.877Z] Platform:      win32
+[debug] [2022-11-17T22:14:58.877Z] Node Version:  v16.14.2
+[debug] [2022-11-17T22:14:58.879Z] Time:          Fri Nov 18 2022 04:14:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-11-17T22:14:58.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-17T22:14:58.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-17T22:14:58.960Z] > authorizing via signed-in user (zonaetmonna2233@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\software-developement\course-web development-with -jankar sir-part2\scic-course\portfoloi\portfolio-scic-assignment
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using portfolio-cefc9. 
+[debug] [2022-11-17T22:15:19.093Z] > refreshing access token with scopes: []
+[debug] [2022-11-17T22:15:19.094Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-11-17T22:15:19.455Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Thu, 17 Nov 2022 22:15:21 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-11-17T22:15:19.463Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 [none]
+[debug] [2022-11-17T22:15:19.766Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 401
+[debug] [2022-11-17T22:15:19.767Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-cefc9 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-11-17T22:15:19.767Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-11-17T22:15:19.977Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Client.request (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
 [error] 
 [error] Error: Failed to get Firebase project portfolio-cefc9. Please make sure the project exists and your account has permission to access it.

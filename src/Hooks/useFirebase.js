@@ -54,6 +54,7 @@ const useFirebase = () => {
         setUser(user);
         setError("");
         // redireact
+        navigate("/");
       })
       .catch((error) => {
         setError(error.message);

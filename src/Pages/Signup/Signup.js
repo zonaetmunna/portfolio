@@ -17,47 +17,47 @@ const Signup = () => {
     signup(data.email, data.password, data.name, navigate);
   };
   return (
-    <div>
-      {error && <Spinner animation="grow" />}
-      {!isLoading && (
-        <div>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <input
-              className=""
-              placeholder=""
-              {...register("name", { required: true })}
-            />
-            <br />
-            <input
-              className=""
-              placeholder="password"
-              {...register("email", { required: true })}
-            />
-            <br />
-            <input
-              className=""
-              placeholder=""
-              {...register("password", { required: true })}
-            />
-            <br />
-            <input
-              className=""
-              placeholder=""
-              {...register("RePassword", { required: true })}
-            />
-            <br />
-            {/* <input className="" type="submit" /> */}
-            <Button variant="primary" className="m-2" type="submit">
-              Signup
-            </Button>{" "}
-            <br />
-          </form>
-        </div>
-      )}
+    <div className="d-flex justify-content-center align-items-center my-5 bg-light">
       <div>
-        <Link className="" to="/login">
-          If you have account? please login{" "}
-        </Link>
+        {error && <Spinner animation="grow" />}
+        {!isLoading && (
+          <div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <input
+                className=""
+                placeholder=""
+                {...register("name", { required: true })}
+              />
+              <br />
+              <input
+                className=""
+                placeholder="password"
+                {...register("email", { required: true })}
+              />
+              <br />
+              <input
+                className=""
+                placeholder=""
+                {...register("password", { required: true })}
+              />
+              <br />
+              <input
+                className=""
+                placeholder="Re-Passowrd"
+                {...register("RePassword", { required: true })}
+              />
+              <br />
+              <Button variant="primary" className="m-2" type="submit">
+                Signup
+              </Button>{" "}
+            </form>
+          </div>
+        )}
+        <div>
+          <Link className="" to="/login">
+            If you have account? please login{" "}
+          </Link>
+        </div>
       </div>
     </div>
   );

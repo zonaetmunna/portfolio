@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/ContextProvider";
 
 const Login = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { login, error, isLoading } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const { register, handleSubmit, reset } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    login(data.email, data.passord, navigate);
+    reset();
+  };
   return (
-    <div>
+    <div className="d-flex justify-content-center align-items-center my-5 bg-light">
       <div>
         <div>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <input {...register("email")} />
+            <input label="email" {...register("email")} />
             <br />
-            <input {...register("password")} />
+            <input label="passowrd" {...register("password")} />
             <br />
-            <input type="submit" />
-            <br />
+            <Button variant="primary" className="m-2" type="submit">
+              Signup
+            </Button>{" "}
           </form>
         </div>
         <div>

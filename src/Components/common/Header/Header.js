@@ -5,12 +5,20 @@ import { HashLink } from "react-router-hash-link";
 import { AuthContext } from "../../../context/ContextProvider";
 import { ThemeContext } from "../../../context/ThemeProvider";
 import pdf from "../../../zonaet-hossain-resume-for-Frontend-developer.pdf";
+import "../../../Sass/main.scss";
 
 const Header = () => {
   // context state value
-  const { user } = useContext(AuthContext);
-  const { state, dispatch } = useContext(ThemeContext);
-  // const darkMode = state.darkMode;
+  const { user, logout } = useContext(AuthContext);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+  const handleMode = () => {
+    if (darkMode) {
+      theme.dispatch({ type: "LIGHTMODE" });
+    } else {
+      theme.dispatch({ type: "DARKMODE" });
+    }
+  };
 
   // input search state
   const [inputText, setInputText] = useState("");
@@ -75,6 +83,33 @@ const Header = () => {
                 Resume
               </Link>
             </Button>
+            {/* dark mode button */}
+            {/* <button
+              className={`bg ${darkMode ? "btn-dark" : "btn-light"}`}
+              onClick={handleMode}
+            >
+              {darkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+            </button> */}
+            {/* <div className="switch-checkbox">
+              <label className="switch">
+                <input
+                  type="checkbox"
+                  onChange={() => setDarkMode(!darkMode)}
+                />
+                <span className="slider round"> </span>
+              </label>
+            </div> */}
+
+            <button
+              className={
+                darkMode
+                  ? "btn btn-floating fa fa-toggle-on"
+                  : "btn btn-floating fa fa-toggle-off"
+              }
+              onClick={handleMode}
+            ></button>
+
+            {/* user link */}
             {user ? (
               <p>{user.displayName}</p>
             ) : (
