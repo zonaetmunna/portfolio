@@ -22,7 +22,7 @@ const Header = () => {
 
   // input search state
   const [inputText, setInputText] = useState("");
-
+  //handle input change
   const handleInputChange = (e) => {
     console.log(e.target.value);
     setInputText(e.target.value);

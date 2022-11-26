@@ -15,6 +15,7 @@ const SingleProject = () => {
         console.log("first", data);
       });
   }, []);
+
   useEffect(() => {
     const singleService = details.find((detail) => detail.id === id);
     console.log("seceond", singleService);

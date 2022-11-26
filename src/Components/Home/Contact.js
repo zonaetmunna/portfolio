@@ -35,22 +35,24 @@ const Contact = () => {
           <h2>Contact</h2>
           {/* contact phone email section */}
           <Col sm={12} md={4}>
-            <div>
-              <div className="d-flex">
-                <div>
+            <div className="">
+              {/* phone section */}
+              <div className="d-flex justify-content-start align-items-start border border-success rounded p-2 mb-1 w-75 bg-info">
+                <div className="me-2">
                   <AiOutlinePhone />
                 </div>
                 <div>
-                  <h5>phone</h5>
+                  <h6>Phone</h6>
                   <p>01634501332</p>
                 </div>
               </div>
-              <div className="d-flex">
-                <div>
+              {/* email section */}
+              <div className="d-flex border border-success rounded p-2 bg-info  w-75">
+                <div className="me-2">
                   <AiOutlinePhone />
                 </div>
                 <div>
-                  <h5>email</h5>
+                  <h5>Email</h5>
                   <p>zonaet.hossain.munna</p>
                 </div>
               </div>
