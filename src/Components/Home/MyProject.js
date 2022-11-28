@@ -14,16 +14,21 @@ const MyProject = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: "50px" }}>
-      <Container>
-        <h3 className="text-center text-primary">My Projects</h3>
-        <Row xs={1} md={3} className="g-4">
-          {projects.map((project) => (
-            <Project key={project.id} project={project}></Project>
-          ))}
-        </Row>
-      </Container>
-    </div>
+    <Container className="mt-5">
+      <div className="text-dark mb-3">
+        <span>
+          <h3>My Projects</h3>
+        </span>
+        <span>
+          <hr />
+        </span>
+      </div>
+      <Row xs={1} md={3} className="g-4">
+        {projects.map((project) => (
+          <Project key={project.id} project={project}></Project>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

@@ -107,7 +107,9 @@ const Header = () => {
                   : "btn btn-floating fa fa-toggle-off"
               }
               onClick={handleMode}
-            ></button>
+            >
+              mode
+            </button>
 
             {/* user link */}
             {user ? (
