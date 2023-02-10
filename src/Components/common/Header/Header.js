@@ -6,12 +6,14 @@ import { AuthContext } from "../../../context/ContextProvider";
 import { ThemeContext } from "../../../context/ThemeProvider";
 import pdf from "../../../zonaet-hossain-resume-for-Frontend-developer.pdf";
 import "../../../Sass/main.scss";
+import { BsMoon, BsFillSunFill } from "react-icons/bs";
 
 const Header = () => {
   // context state value
   const { user, logout } = useContext(AuthContext);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
   const handleMode = () => {
     if (darkMode) {
       theme.dispatch({ type: "LIGHTMODE" });
@@ -21,6 +23,7 @@ const Header = () => {
   };
 
   // input search state
+  // cooming soon
   const [inputText, setInputText] = useState("");
   //handle input change
   const handleInputChange = (e) => {
@@ -99,17 +102,19 @@ const Header = () => {
                 <span className="slider round"> </span>
               </label>
             </div> */}
-
-            <button
-              className={
-                darkMode
-                  ? "btn btn-floating fa fa-toggle-on"
-                  : "btn btn-floating fa fa-toggle-off"
-              }
-              onClick={handleMode}
-            >
-              mode
-            </button>
+            <div>
+              <button
+                variant="light"
+                className="btn btn-outline-none border border-0 rounded-circle"
+                onClick={handleMode}
+              >
+                {darkMode ? (
+                  <BsMoon size={20} color="white" />
+                ) : (
+                  <BsFillSunFill size={20} color="white" />
+                )}
+              </button>
+            </div>
 
             {/* user link */}
             {user ? (
