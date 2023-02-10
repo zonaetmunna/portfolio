@@ -53,8 +53,8 @@ const Header = () => {
               Home
             </Nav.Link>
             <Nav.Link
-              as={HashLink}
-              to="#blog"
+              as={Link}
+              to="/blog"
               className="text-decoration-none text-white"
             >
               Blog
